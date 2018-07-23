@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "193180282369",
+    "firebase_url": "https://demoauthentication-959f1.firebaseio.com",
+    "project_id": "demoauthentication-959f1",
+    "storage_bucket": "demoauthentication-959f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193180282369:android:f2d833500bc4fd13",
+        "android_client_info": {
+          "package_name": "com.example.adnanahmed.demogoogleauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193180282369-lirj5086smmhaj1mbeto30gjrl1c3bmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHfzTFo-2ZLrBurDRMypT5ufBR3zfPsPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
