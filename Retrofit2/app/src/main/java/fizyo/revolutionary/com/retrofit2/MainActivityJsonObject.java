@@ -31,13 +31,14 @@ public class MainActivityJsonObject extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.listViewHeroes);
-        button=(Button)findViewById(R.id.button);
+        button = (Button) findViewById(R.id.button);
         button.setText("Array");
-        text=(TextView)findViewById(R.id.text);
+        text = (TextView) findViewById(R.id.text);
+        text.setVisibility(View.VISIBLE);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivityJsonObject.this,MainActivity.class));
+                startActivity(new Intent(MainActivityJsonObject.this, MainActivity.class));
                 finish();
             }
         });
@@ -56,11 +57,11 @@ public class MainActivityJsonObject extends AppCompatActivity {
             @Override
             public void onResponse(Call<model> call, Response<model> response) {
                 Toast.makeText(MainActivityJsonObject.this, "Got Data", Toast.LENGTH_SHORT).show();
-                Log.d(" mainAction", "  response " + response.body().toString());
+
                 Log.d(" mainAction", "  rom - " + response.body().getRom().toString());
                 Log.d(" mainAction", "  rom - " + response.body().getScreenSize().toString());
                 Log.d(" mainAction", "  rom - " + response.body().getBackCamera().toString());
-            text.setText(response.body().toString()+"\n"+response.body().getRom().toString()+"\n"+response.body().getScreenSize().toString()+"\n"+response.body().getBackCamera().toString());
+                text.setText(response.body().getRom().toString() + "\n" + response.body().getScreenSize().toString() + "\n" + response.body().getBackCamera().toString());
             }
 
             @Override
