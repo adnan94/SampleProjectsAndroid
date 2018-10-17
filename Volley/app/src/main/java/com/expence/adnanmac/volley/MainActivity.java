@@ -2,6 +2,7 @@ package com.expence.adnanmac.volley;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         singleTonRequestQueue = SingletonClass.getInstance().getRequestQueue();
         jsonObjectParsing(urlObject);
+jsonArrayParsing(urlArray);
     }
 
     public void stringReqMethod(String url) {
@@ -52,17 +54,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 try {
-                    JSONObject objJson = jsonObject.getJSONObject("rates");
-                    String get = objJson.getString("AED");
-                    Toast.makeText(MainActivity.this, "This Is the Result ::" + get, Toast.LENGTH_SHORT).show();
-                } catch (JSONException e) {
+                    Log.d("eeeeee",""+jsonObject.toString());
+//                    Toast.makeText(MainActivity.this, "This Is the Result ::"+jsonObject.toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, ""+jsonObject.get("rom").toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, ""+jsonObject.get("screenSize").toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, ""+jsonObject.get("frontCamera").toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, ""+jsonObject.get("backCamera").toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, ""+jsonObject.get("name").toString(), Toast.LENGTH_LONG).show();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-                Toast.makeText(MainActivity.this, "no network" + volleyError, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "no network" + volleyError.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         singleTonRequestQueue.add(obj);
@@ -78,11 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < jsonArray.length(); i++) {
                     try {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String title = jsonObject.getString("title");
-                        String ID = jsonObject.getString("id");
-                        String body = jsonObject.getString("body");
-                        data = "Title : " + title + "\n" + "Body : " + body + "\n" + "Id : " + ID + "\n";
-                        Toast.makeText(MainActivity.this, "This Is the Result ::" + data, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, ""+jsonObject.get("name").toString(), Toast.LENGTH_LONG).show();
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -107,4 +109,10 @@ public class MainActivity extends AppCompatActivity {
 //        ab.setMessage(message);
 //        ab.show();
 //    }
+
+    @Override
+    protected void onResume() {
+//        jsonObjectParsing(urlObject);
+        super.onResume();
+    }
 }
