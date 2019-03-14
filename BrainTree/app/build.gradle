@@ -28,9 +28,9 @@ dependencies {
     // Google dependencies
     implementation 'com.google.android.gms:play-services-wallet:16.0.1'
     implementation 'com.google.android.gms:play-services:7.5.0'
-    compile 'com.braintreepayments.api:drop-in:3.+'
-    compile 'com.braintreepayments.api:braintree:2.+'
-    compile 'com.braintreepayments.gateway:braintree-java:2.72.1'
+    implementation 'com.braintreepayments.api:drop-in:3.+'
+    implementation 'com.braintreepayments.api:braintree:2.+'
+    implementation 'com.braintreepayments.gateway:braintree-java:2.72.1'
 
 
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

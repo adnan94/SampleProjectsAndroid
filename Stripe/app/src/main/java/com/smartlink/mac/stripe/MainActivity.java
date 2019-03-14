@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
                             new Card(cardToSave.getNumber(), cardToSave.getExpMonth(), cardToSave.getExpYear(), cardToSave.getCVC()),
                             new TokenCallback() {
                                 public void onSuccess(Token token) {
-                                    // Send token to your own web service
-//                MyServer.chargeToken(token);
                                     Log.d("Error Log : ", token.getId().toString());
 
                                     Map<String, Object> params = new HashMap<>();
@@ -68,20 +66,25 @@ public class MainActivity extends AppCompatActivity {
                                     params.put("description", "Example charge");
                                     params.put("source", token.getId().toString());
                                     try {
-                                        Charge charge = Charge.create(params).;
+                                        Charge charge = Charge.create(params);
+                                        Toast.makeText(MainActivity.this,"Done Transaction",Toast.LENGTH_LONG).show();
 
                                     } catch (AuthenticationException e) {
                                         e.printStackTrace();
+                                        Toast.makeText(MainActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
                                     } catch (InvalidRequestException e) {
                                         e.printStackTrace();
+                                        Toast.makeText(MainActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
                                     } catch (APIConnectionException e) {
                                         e.printStackTrace();
+                                        Toast.makeText(MainActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
                                     } catch (CardException e) {
                                         e.printStackTrace();
+                                        Toast.makeText(MainActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
                                     } catch (APIException e) {
                                         e.printStackTrace();
+                                        Toast.makeText(MainActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
                                     }
-//                            Charge
                                 }
 
                                 public void onError(Exception error) {
