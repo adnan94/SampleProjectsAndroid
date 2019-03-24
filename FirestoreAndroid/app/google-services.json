@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "186417135895",
+    "firebase_url": "https://firestoredemo-39f01.firebaseio.com",
+    "project_id": "firestoredemo-39f01",
+    "storage_bucket": "firestoredemo-39f01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186417135895:android:d139757c2a927ef2",
+        "android_client_info": {
+          "package_name": "com.smartlink.mac.firestoreandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186417135895-l9b2ug9gmmo9a34sjrarsgh5vnpsk9dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh127A9aqC-3E7zZam-acyQXRboaV3Ki8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
