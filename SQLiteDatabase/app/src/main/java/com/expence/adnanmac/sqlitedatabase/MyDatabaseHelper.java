@@ -8,10 +8,7 @@ import android.util.Log;
 public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "DBName";
-
     private static final int DATABASE_VERSION = 4;
-
-    // Database creation sql statement
     private static final String DATABASE_CREATE = "create table MyEmployees( _id integer primary key,name text not null);";
 
     public MyDatabaseHelper(Context context) {

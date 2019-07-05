@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         singleTonRequestQueue = SingletonClass.getInstance().getRequestQueue();
         jsonObjectParsing(urlObject);
-jsonArrayParsing(urlArray);
+        jsonArrayParsing(urlArray);
     }
 
     public void stringReqMethod(String url) {
@@ -89,7 +89,6 @@ jsonArrayParsing(urlArray);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-//                    Log.d("TAG", "This Is The Response : " + jsonArray.toString());
                 }
             }
         }, new Response.ErrorListener() {
@@ -101,18 +100,10 @@ jsonArrayParsing(urlArray);
 
         singleTonRequestQueue.add(jsonArrayRequest);
     }
-//
-//    public void alert(String title, String message) {
-//        AlertDialog.Builder ab = new AlertDialog.Builder(this);
-//        ab.setCancelable(true);
-//        ab.setTitle(title);
-//        ab.setMessage(message);
-//        ab.show();
-//    }
+
 
     @Override
     protected void onResume() {
-//        jsonObjectParsing(urlObject);
         super.onResume();
     }
 }
