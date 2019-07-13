@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PassDataBetweenActivities</string>
+    <string name="title_activity_new">NewActivity</string>
+</resources>
