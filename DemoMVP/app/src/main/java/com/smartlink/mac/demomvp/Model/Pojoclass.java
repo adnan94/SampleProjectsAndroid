@@ -1,4 +1,4 @@
-package com.smartlink.mac.demomvp.Model;
+package com.smartlink.mac.demomvp.model;
 
 import com.google.gson.annotations.SerializedName;
 

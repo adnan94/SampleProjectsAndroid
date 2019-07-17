@@ -1,15 +1,14 @@
-package com.smartlink.mac.demomvp.Model;
+package com.smartlink.mac.demomvp.model;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
 
-import com.smartlink.mac.demomvp.Presenter.LoginPresenter;
-import com.smartlink.mac.demomvp.View.AlertDialog.LoadingScreen;
-import com.smartlink.mac.demomvp.View.LoginView;
+import com.smartlink.mac.demomvp.presenter.LoginPresenter;
+import com.smartlink.mac.demomvp.view.AlertDialog.LoadingScreen;
+import com.smartlink.mac.demomvp.view.LoginView;
 
 import static android.content.Context.MODE_PRIVATE;
 

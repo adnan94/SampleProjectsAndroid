@@ -1,34 +1,31 @@
-package com.smartlink.mac.demomvp.Model;
+package com.smartlink.mac.demomvp.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
-import android.widget.ArrayAdapter;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
+
+import android.view.View;
 import android.widget.Toast;
 
-import com.smartlink.mac.demomvp.Presenter.HomeScreenPresenter;
-import com.smartlink.mac.demomvp.Presenter.LoginPresenter;
-import com.smartlink.mac.demomvp.View.AlertDialog.LoadingScreen;
-import com.smartlink.mac.demomvp.View.Api;
-import com.smartlink.mac.demomvp.View.HomeScreenView;
-import com.smartlink.mac.demomvp.View.LoginView;
-
+import com.smartlink.mac.demomvp.presenter.HomeContractor;
+import com.smartlink.mac.demomvp.view.AlertDialog.LoadingScreen;
+import com.smartlink.mac.demomvp.view.Api;
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 import static android.content.Context.MODE_PRIVATE;
 
-public class HomeScreenPresenterImplementation implements HomeScreenPresenter {
-    HomeScreenView homescreenView;
+public class HomeScreenPresenterImplementation implements HomeContractor.HomeScreenPresenter {
+    HomeContractor.HomeScreenView homescreenView;
     final DialogFragment loadingScreen;
 
-    public HomeScreenPresenterImplementation(HomeScreenView homescreenView) {
+
+
+    public HomeScreenPresenterImplementation(HomeContractor.HomeScreenView homescreenView) {
         this.homescreenView = homescreenView;
         this.loadingScreen = LoadingScreen.getInstance();
     }
@@ -41,7 +38,12 @@ public class HomeScreenPresenterImplementation implements HomeScreenPresenter {
     }
 
 
-    public void buildRetrofit(Context context, FragmentManager manager) {
+    public String getName(){
+        return "Adnan";
+    }
+
+
+    public void buildRetrofit(View view,Context context, FragmentManager manager) {
         loadingScreen.show(manager, "Loading List");
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Api.BASE_URL)
@@ -76,5 +78,9 @@ public class HomeScreenPresenterImplementation implements HomeScreenPresenter {
         });
     }
 
-
+    @Override
+    public void nextActivity(View view,String name) {
+        homescreenView.nextActivity(name);
+//        context.startActivity(new Intent(context, NewActivity.class));
+    }
 }

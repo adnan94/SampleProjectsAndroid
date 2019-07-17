@@ -1,43 +1,47 @@
-package com.smartlink.mac.demomvp.View.Activities;
+package com.smartlink.mac.demomvp.view.Activities;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import com.smartlink.mac.demomvp.Model.LoginPresenterImplementation;
-import com.smartlink.mac.demomvp.Presenter.LoginPresenter;
+import com.smartlink.mac.demomvp.model.LoginPresenterImplementation;
+import com.smartlink.mac.demomvp.presenter.LoginPresenter;
 import com.smartlink.mac.demomvp.R;
-import com.smartlink.mac.demomvp.View.LoginView;
+import com.smartlink.mac.demomvp.view.LoginView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 public class MainActivity extends AppCompatActivity implements LoginView {
 
-    EditText email, password;
+    @BindView(R.id.email)
+    EditText email;
+
+    @BindView(R.id.password)
+    EditText password;
+
+    @BindView(R.id.button)
     Button login;
+
     LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        casts();
         loginPresenter = new LoginPresenterImplementation(this);
-//        ButterKnife.bind(this);
-
+        ButterKnife.bind(this);
+        clicks();
     }
 
 
-    public void casts() {
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-        login = (Button) findViewById(R.id.button);
-
+    public void clicks() {
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,5 +69,10 @@ public class MainActivity extends AppCompatActivity implements LoginView {
     @Override
     public void validationError() {
         Toast.makeText(MainActivity.this, "Validation Error", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

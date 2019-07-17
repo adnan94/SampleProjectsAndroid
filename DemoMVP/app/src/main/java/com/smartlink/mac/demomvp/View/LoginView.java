@@ -1,4 +1,4 @@
-package com.smartlink.mac.demomvp.View;
+package com.smartlink.mac.demomvp.view;
 
 public interface LoginView {
 

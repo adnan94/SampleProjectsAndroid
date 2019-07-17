@@ -1,34 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".View.Activities.HomeScreen"
-    android:background="#9900"
-    android:fillViewport="true"
-    >
-    <RelativeLayout
+<layout>
+
+    <data>
+
+        <variable
+            name="anyName"
+            type="com.smartlink.mac.demomvp.model.HomeScreenPresenterImplementation" />
+
+        <variable
+            name="name"
+            type="String" />
+
+
+
+
+
+
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#9900"
+        android:fillViewport="true"
+        tools:context=".view.Activities.HomeScreen">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_margin="20dp"
-            android:background="#00000000"
-            android:textColor="@color/white"
-            android:text="Logout"
-            android:id="@+id/button"
-            />
-        <ListView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/button"
-            android:id="@+id/list"
-            ></ListView>
-    </RelativeLayout>
+            android:layout_height="match_parent"
+
+            >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:background="#00000000"
+
+                android:text="Logout"
+                android:textColor="@color/white"
+
+                />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/proceed"
+
+                android:layout_below="@id/button"></ListView>
 
 
-</ScrollView>
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#990099"
+                android:text="@{anyName.getName}"
+                android:onClick="@{(v) -> anyName.nextActivity(v,name)}"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</layout>

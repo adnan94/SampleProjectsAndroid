@@ -1,6 +1,6 @@
-package com.smartlink.mac.demomvp.View;
+package com.smartlink.mac.demomvp.view;
 
-import com.smartlink.mac.demomvp.Model.Pojoclass;
+import com.smartlink.mac.demomvp.model.Pojoclass;
 
 import java.util.List;
 

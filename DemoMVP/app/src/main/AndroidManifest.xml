@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.smartlink.mac.demomvp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,19 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activities.HomeScreen"></activity>
-
-        <activity android:name=".View.Activities.SplashScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            >
+        <activity android:name=".view.Activities.NewActivity"></activity>
+        <activity android:name=".view.Activities.HomeScreen" />
+        <activity
+            android:name=".view.Activities.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Activities.MainActivity" />
-
+        <activity android:name=".view.Activities.MainActivity" />
     </application>
 
 </manifest>
