@@ -16,6 +16,10 @@ public interface HomeContractor {
         void buildRetrofit(Context context, FragmentManager manager);
 
         void nextActivity(View view,String name);
+
+        void destroyCalled();
+
+
     }
 
     interface HomeScreenView {
@@ -26,6 +30,7 @@ public interface HomeContractor {
         void updateListView(ArrayList heroes);
 
         void nextActivity(String name);
+
 
     }
 }

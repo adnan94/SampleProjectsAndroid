@@ -24,7 +24,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class HomeScreenPresenterImplementation implements HomeContractor.HomeScreenPresenter {
     HomeContractor.HomeScreenView homescreenView;
     final DialogFragment loadingScreen;
-
+    private Call<List<Pojoclass>> call;
 
 
     public HomeScreenPresenterImplementation(HomeContractor.HomeScreenView homescreenView) {
@@ -53,7 +53,7 @@ public class HomeScreenPresenterImplementation implements HomeContractor.HomeScr
                 .build();
         Api api = retrofit.create(Api.class);
 
-        Call<List<Pojoclass>> call = api.getHeroes();
+        call = api.getHeroes();
 
         call.enqueue(new Callback<List<Pojoclass>>() {
             @Override
@@ -78,9 +78,19 @@ public class HomeScreenPresenterImplementation implements HomeContractor.HomeScr
         });
     }
 
+
+
+
     @Override
     public void nextActivity(View view,String name) {
         homescreenView.nextActivity(name);
 //        context.startActivity(new Intent(context, NewActivity.class));
+    }
+
+
+    @Override
+    public void destroyCalled() {
+        if(call!=null){
+        call.cancel();}
     }
 }

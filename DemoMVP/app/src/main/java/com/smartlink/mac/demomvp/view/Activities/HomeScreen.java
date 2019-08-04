@@ -42,22 +42,16 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_home_screen);
         ActivityHomeScreenBinding bind = DataBindingUtil.setContentView(this, R.layout.activity_home_screen);
+        inits(bind);
         if (savedInstanceState == null) {
-            homescreenPresenter = new HomeScreenPresenterImplementation(this);
-            bind.setName("Adnan Ahmed");
-            bind.setAnyName(homescreenPresenter);
-            inits();
-            setListView();
+            setAdaptor();
+            homescreenPresenter.buildRetrofit(this, getSupportFragmentManager());
         }
-
     }
 
-
-    private void setListView() {
-
-        list = new ArrayList();
+    private void setAdaptor() {
+        adapter = null;
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
     }
@@ -74,21 +68,19 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onRestoreInstanceState(savedInstanceState);
-        ActivityHomeScreenBinding bind = DataBindingUtil.setContentView(this, R.layout.activity_home_screen);
-        homescreenPresenter = new HomeScreenPresenterImplementation(this);
-        bind.setName("Adnan Ahmed");
-        bind.setAnyName(homescreenPresenter);
-
-        ButterKnife.bind(this);
         list = savedInstanceState.getStringArrayList("list");
-        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, list);
-        listView.setAdapter(adapter);
+        setAdaptor();
+
     }
 
 
-    private void inits() {
+    private void inits(ActivityHomeScreenBinding bind) {
         ButterKnife.bind(this);
-        homescreenPresenter.buildRetrofit(this, getSupportFragmentManager());
+        homescreenPresenter = new HomeScreenPresenterImplementation(this);
+        bind.setName("Adnan Ahmed");
+        bind.setAnyName(homescreenPresenter);
+        list = new ArrayList();
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,5 +109,12 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
         Toast.makeText(HomeScreen.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
 
 
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        homescreenPresenter.destroyCalled();
     }
 }
