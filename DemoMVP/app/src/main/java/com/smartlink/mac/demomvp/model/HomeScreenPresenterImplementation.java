@@ -11,6 +11,8 @@ import android.widget.Toast;
 import com.smartlink.mac.demomvp.presenter.HomeContractor;
 import com.smartlink.mac.demomvp.view.AlertDialog.LoadingScreen;
 import com.smartlink.mac.demomvp.view.Api;
+
+import java.util.ArrayList;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,7 +45,7 @@ public class HomeScreenPresenterImplementation implements HomeContractor.HomeScr
     }
 
 
-    public void buildRetrofit(View view,Context context, FragmentManager manager) {
+    public void buildRetrofit(Context context, FragmentManager manager) {
         loadingScreen.show(manager, "Loading List");
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Api.BASE_URL)
@@ -58,13 +60,11 @@ public class HomeScreenPresenterImplementation implements HomeContractor.HomeScr
             public void onResponse(Call<List<Pojoclass>> call, Response<List<Pojoclass>> response) {
                 List<Pojoclass> heroList = response.body();
 
-                String[] heroes = new String[heroList.size()];
+                ArrayList heroes = new ArrayList();
 
                 for (int i = 0; i < heroList.size(); i++) {
-                    heroes[i] = heroList.get(i).getName();
+                    heroes.add(heroList.get(i).getName());
                 }
-
-                //displaying the string array into listview
                 homescreenView.updateListView(heroes);
                 loadingScreen.dismiss();
             }
