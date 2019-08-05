@@ -1,0 +1,442 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <!--3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:background="@mipmap/top_bg_home"
+            android:layout_marginBottom="@dimen/ten"
+            >
+            <RelativeLayout
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourty_five"
+
+                >
+
+
+                <!--//title-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/toolBarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome to "
+                        android:textColor="#fff"
+                        android:textSize="@dimen/fourteenSp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/toolBarText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terace Cafe"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/fourteenSp"
+
+                        />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/navButtonToolbar"
+                    android:layout_width="@dimen/fourty"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:padding="@dimen/SixteenSp"
+                    android:scaleType="centerCrop"
+                    android:paddingLeft="5dp"
+                    android:src="@mipmap/nav_icon_home" />
+
+                <ImageButton
+                    android:id="@+id/toolBarBackButton"
+                    android:layout_width="@dimen/fourty"
+                    android:layout_height="@dimen/twentyFive"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:src="@mipmap/back_button"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/addButton"
+                    android:layout_width="@dimen/fourty"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/cart_dot_home" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:id="@+id/searchButton"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:background="@mipmap/search_bar_home"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_icon_home"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:id="@+id/searchImage"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSearch"
+                    android:textColor="#666768"
+                    android:text="Search Items"
+                    android:layout_toRightOf="@id/searchImage"
+                    android:layout_marginLeft="@dimen/fourteenSp"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/mostPopularButton"
+                    >
+
+                    <ImageButton
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/twenty"
+                        android:clickable="false"
+                        android:background="#00000000"
+                        android:src="@mipmap/most_popular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9E262B"
+                        android:clickable="false"
+                        android:text="Most Popular"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/mostPopular"
+                        android:textSize="@dimen/twelveSp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/lunchButton"
+                    >
+
+                    <ImageButton
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/twenty"
+                        android:background="#00000000"
+                        android:clickable="false"
+                        android:src="@mipmap/lunch" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C46212"
+                        android:text="Lunch"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:id="@+id/lunchText"
+                        android:textSize="@dimen/twelveSp"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/dinnerButton"
+                    >
+
+                    <ImageButton
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/twenty"
+                        android:clickable="false"
+                        android:background="#00000000"
+                        android:src="@mipmap/dinner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#89C026"
+                        android:text="Dinner"
+                        android:clickable="false"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/dinnerText"
+                        android:textSize="@dimen/twelveSp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d8d8d8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:id="@+id/snacksButton"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/twenty"
+                        android:background="#00000000"
+                        android:clickable="false"
+                        android:src="@mipmap/snacks" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#276BB0"
+                        android:text="Snacks"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:id="@+id/snackText"
+                        android:textSize="@dimen/twelveSp"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:id="@+id/schoolButton"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:clickable="false"
+                        android:layout_height="@dimen/twenty"
+                        android:background="#00000000"
+                        android:src="@mipmap/school_items" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B8397A"
+                        android:text="School Items"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:id="@+id/schoolText"
+                        android:textSize="@dimen/twelveSp"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#d8d8d8" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:id="@+id/extraButton"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:layout_width="@dimen/twenty"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/twenty"
+                        android:background="#00000000"
+                        android:src="@mipmap/extras" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2233AF"
+                        android:clickable="false"
+                        android:text="Extra Items"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/extraItems"
+                        android:textSize="@dimen/twelveSp"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d8d8d8" />
+
+
+        </LinearLayout>
+
+        <!--0.7-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dealsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="Exclusive Deals For You"
+                android:textColor="#4D4D4F"
+                android:textSize="@dimen/twelveSp" />
+
+            <TextView
+                android:id="@+id/seeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/twenty"
+                android:text="See All"
+                android:textColor="#8D4B0D"
+                android:textSize="@dimen/twelveSp" />
+
+
+        </RelativeLayout>
+
+        <!--2.3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:orientation="vertical">
+
+
+
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recycler"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:cacheColorHint="#00000000"-->
+                <!--android:scrollingCache="false"></android.support.v7.widget.RecyclerView>-->
+
+        </LinearLayout>
+
+
+        <!--1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/makeReservation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_weight="8"
+                android:background="@drawable/rounded_button_login_red"
+                android:text="Make A Reservation"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/twelveSp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
