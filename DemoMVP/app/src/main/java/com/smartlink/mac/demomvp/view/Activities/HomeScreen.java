@@ -55,6 +55,21 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
     }
+    private void inits(ActivityHomeScreenBinding bind) {
+        ButterKnife.bind(this);
+        homescreenPresenter = new HomeScreenPresenterImplementation(this);
+        bind.setName("Adnan Ahmed");
+        bind.setAnyName(homescreenPresenter);
+        list = new ArrayList();
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homescreenPresenter.doLogout(HomeScreen.this);
+            }
+        });
+
+    }
 
 
     @Override
@@ -74,21 +89,6 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
     }
 
 
-    private void inits(ActivityHomeScreenBinding bind) {
-        ButterKnife.bind(this);
-        homescreenPresenter = new HomeScreenPresenterImplementation(this);
-        bind.setName("Adnan Ahmed");
-        bind.setAnyName(homescreenPresenter);
-        list = new ArrayList();
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                homescreenPresenter.doLogout(HomeScreen.this);
-            }
-        });
-
-    }
 
     @Override
     public void loggedOut() {
@@ -106,8 +106,8 @@ public class HomeScreen extends AppCompatActivity implements HomeContractor.Home
 
     @Override
     public void nextActivity(String name) {
-        Toast.makeText(HomeScreen.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
-
+//        Toast.makeText(HomeScreen.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
+        getSupportFragmentManager().beginTransaction().add(R.id.content_panel, new MyFragment(), null).addToBackStack(null).commit();
 
     }
 

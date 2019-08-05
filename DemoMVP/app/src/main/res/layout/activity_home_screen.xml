@@ -12,10 +12,6 @@
             type="String" />
 
 
-
-
-
-
     </data>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -30,6 +26,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/content_panel"
+            android:fitsSystemWindows="true"
 
             >
 
@@ -61,8 +59,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="#990099"
-                android:text="@{anyName.getName}"
                 android:onClick="@{(v) -> anyName.nextActivity(v,name)}"
+                android:text="@{anyName.getName}"
                 android:textColor="@color/white" />
         </RelativeLayout>
 
