@@ -1,0 +1,29 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#d9d9d9"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_collapseMode="parallax"
+            app:title="Horizontal Toolbar"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:theme="@style/CircularProgress"
+            />
+    </LinearLayout>
+
+
