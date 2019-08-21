@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         mainViewModel = ViewModelProviders.of(this)
                 .get(MainViewModel.class);
+
         mainViewModel.init();
 
         casts();

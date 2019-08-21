@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         aut = FirebaseAuth.getInstance();
         if(aut.getCurrentUser()!=null){
             FirebaseMessaging.getInstance().subscribeToTopic("pushNotifications");
-
         }
 
         register = (Button) findViewById(R.id.register);

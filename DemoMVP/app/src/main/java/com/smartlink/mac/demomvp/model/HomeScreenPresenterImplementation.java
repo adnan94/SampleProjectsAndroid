@@ -76,6 +76,10 @@ public class HomeScreenPresenterImplementation implements HomeContractor.HomeScr
                 Toast.makeText(context, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
+
     }
 
 
