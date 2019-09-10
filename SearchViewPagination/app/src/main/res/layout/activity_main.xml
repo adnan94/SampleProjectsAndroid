@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_home"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <!--//title-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Menu"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/SixteenSp"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/toolBarBackButton"
+            android:layout_width="@dimen/fourty"
+            android:layout_height="@dimen/twentyFive"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:src="@mipmap/back_icon" />
+
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="@dimen/fourty"
+            android:layout_height="@dimen/fourty"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@mipmap/cart_icon_snacks" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/ten"
+        android:layout_weight="1"
+        android:background="@mipmap/search_bar_location">
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:layout_toLeftOf="@+id/filter"
+            android:background="@null"
+            android:iconifiedByDefault="false"
+            android:queryHint="Type Text"
+            android:singleLine="true"
+            app:defaultQueryHint="Type Text"
+            app:iconifiedByDefault="false"
+            app:queryHint="Type Text" />
+
+        <ImageButton
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/ten"
+            android:background="#00000000"
+            android:src="@mipmap/filter" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:scrollingCache="false"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+1)What is a broadcast receiver?
+
+2)Is it possible to create an activity in Android without a user interface ?
+
+3)What is a ContentProvider and what is it typically used for?
+
+4)Under what condition could the code sample below crash your application? How would you modify the code to avoid this potential problem? Explain your answer.
+
+5)Describe three common use cases for using an Intent.
+
+6)If the Activity is showing an animation that indicates some kind of progress, what issue might you encounter and how could you address it?
+
+7)In an app you’re working on, you notice that a view’s value is not being restored after screen reorientation. What could be a likely cause of the problem that you should verify, at a minimum, about that particular view?
+
+8)What is DDMS? Describe some of its capabilities.
+
+9)What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can these problems be avoided?
+
+10)What is an Intent? Can it be used to provide data to a ContentProvider? Why or why not?
+
+11)The Intent object is a common mechanism for starting new activity and transferring data from one activity to another. However, you cannot start a ContentProvider using an Intent.
+
+12)When you want to access data in a ContentProvider, you must instead use the ContentResolver object in your application’s Context to communicate with the provider as a client. The ContentResolver object communicates with the provider object, an instance of a class that implements ContentProvider. The provider object receives data requests from clients, performs the requested action, and returns the results.
+
+13)What is the difference between a fragment and an activity? Explain the relationship between the two.
+
+14)What is difference between Serializable and Parcelable ? Which is best approach in Android ?
+
+15)What are “launch modes”? What are the two mechanisms by which they can be defined? What specific types of launch modes are supported?
+
+16)What is the difference between Service and IntentService? How is each used?
+
+17)How do you supply construction arguments into a Fragment?
+
+18)What are the seven lifecycle methods of Android activity and what is their purpose?
+
+19)Why did you become an Android developer? What are some of the advantages of the Android platform?
+
+20)What is SQLite? How does it differ from client-server database management systems?
+
+21)Briefly list the components of the Android architecture.
+
+22) Can you describe the core building blocks of an Android application?
+  
+23)What is ANR, and why does it happen?
+
+24)Which method is called only once in a fragment life cycle?
+
+25)Is it possible to create an activity in Android without a user interface ?

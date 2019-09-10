@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TodaysMenu</string>
+    <string name="facebook_app_id">508979069875758</string>
+    <string name="fb_app_name">Todays Menu</string>
+    <string name="fb_login_protocol_scheme">fb508979069875758</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="apiKey">AIzaSyDdwn2QDRNrKhEVoR3Sf1kWI7p3m6VE8_Q</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_empty_ectivity">EmptyEctivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
