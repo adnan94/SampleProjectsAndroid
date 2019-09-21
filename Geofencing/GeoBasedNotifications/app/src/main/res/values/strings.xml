@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GeofencingSample</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rationale_location">need to get your for location</string>
+    <string name="switch_on_gps_dialog_title">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="yes">Yes</string>
+    <string name="no">Cancel</string>
+
+    <string name="add_your_marker">Long press on the map anywhere\n for adding the center of the circle.</string>
+    <string name="add_your_circle">Tap click on the marker icon\n for adding the area radius.</string>
+    <string name="tou_will_get_notification">Leaving the circle or entering the desired radius\n you will notified</string>
+    <string name="set_radius_of_area">Submit</string>
+    <string name="insert_radius_here">Type the radius in meter here</string>
+    <string name="radius_empty">Radius empty</string>
+    <string name="please_insert_radius_in_meters_below">Enter radius</string>
+    <string name="you_are_already_here">You are already here</string>
+    <string name="title_you_are_inside">You are now INSIDE the circle!</string>
+    <string name="message_you_are_inside">You CHECKED_IN your radius defined</string>
+    <string name="title_you_are_outside">You are now OUTSIDE the circle!</string>
+    <string name="message_you_are_outside">You CHECKED_OUT your radius defined</string>
+    <string name="you_are_here">You are here</string>
+    <string name="map_api_key">AIzaSyDdwn2QDRNrKhEVoR3Sf1kWI7p3m6VE8_Q</string>
+
+</resources>
