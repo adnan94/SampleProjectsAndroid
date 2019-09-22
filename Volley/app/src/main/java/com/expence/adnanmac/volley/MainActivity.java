@@ -18,8 +18,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
+
     String urlObject = "http://www.blueappsoftware.in/android/downloadcode/objectfile.json";
     String urlArray = "https://simplifiedcoding.net/demos/marvel/";
+
     RequestQueue singleTonRequestQueue;
     String data;
 
@@ -27,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         singleTonRequestQueue = SingletonClass.getInstance().getRequestQueue();
         jsonObjectParsing(urlObject);
         jsonArrayParsing(urlArray);
+
     }
 
     public void stringReqMethod(String url) {

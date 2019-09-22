@@ -10,4 +10,7 @@ public interface Api {
 
     @GET("marvel")
     Call<List<Pojoclass>> getHeroes();
+
+    @GET("android/downloadcode/objectfile.json")
+    Call<model> getModel();
 }
