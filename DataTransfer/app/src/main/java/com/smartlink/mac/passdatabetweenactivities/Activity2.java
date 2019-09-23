@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class Activity2 extends AppCompatActivity {
 
     Button back;
-  Communicator comm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,6 @@ public class Activity2 extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                comm.showMessage("Got It Comm");
 
                 Intent i = new Intent();
                 i.putExtra("text", "Got Back !");

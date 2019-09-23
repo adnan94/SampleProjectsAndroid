@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements Communicator {
         Communicator communicator = this;
         Intent i = new Intent(this, Activity2.class);
         i.putExtra("text", "Got Data");
-        i.putExtra("comm", (Parcelable) communicator);
+//        i.putExtra("comm", (Parcelable) communicator);
         startActivityForResult(i, 0);
     }
 

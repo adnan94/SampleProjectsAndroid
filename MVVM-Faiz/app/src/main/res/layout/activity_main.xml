@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.example.mvvmwithdatabinding.viewmodel.UserModel"/>
+
+        <variable
+            name="userLoginEvent"
+            type="com.example.mvvmwithdatabinding.commands.UserLogin"/>
+
+    </data>
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".ui.MainActivity">
+
+    <EditText
+        android:id="@+id/edt_user_email"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textColorHint="#888282"
+        android:background="#fff"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:hint="@{login.userEmailHint}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={login.userEmail}"
+         />
+
+    <EditText
+        android:id="@+id/edt_user_pass"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:textColorHint="#888282"
+        android:hint="@{login.userPasswordHint}"
+        android:text="@={login.userPassword}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v)->userLoginEvent.onClickLogin()}"
+        />
+
+
+</LinearLayout>
+</layout>
