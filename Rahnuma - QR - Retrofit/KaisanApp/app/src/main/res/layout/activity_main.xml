@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragments.InformationFragment"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activities.TermsActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="TERMS AND CONDITIONS FOR THE USE OF THE APP"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Last Updated: 8/12/2019"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Integration kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text1"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Jurisdiction: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:id="@+id/text2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Copyright: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text3"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Trademarks: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text4"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="DISCLAIMER - NO LIABLITY : kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text5"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="No liablity in case of counterfeiting: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text6"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="No liablity related to the use or distribution of the Products: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text7"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Unlawful and prohabited use: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:id="@+id/text8"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Amendments: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text9"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="PRIVACY POLICY: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="What information do we collect?"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:id="@+id/text10"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Personally Identifiable Information: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/text11"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Non-Personally Identifiable Information: kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="Do Operators share tha information they recieve?"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:text="kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="How do Operators protect your information?"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="'Cookies' and how Operators use them?"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:text="kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            /><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="Your rights"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="kaisan dost is a consumer engegement platform that includes smartphones app and is integrated with SICPATRACE solution, allowing consumers to leverage the digital label applied on a product to determine weather the label is geniune."
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/grey"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="How to contact us?"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="You may contact us at any time using one of the methods below:"
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="(i)by emailing us : pk.info@sicpa.com (ii)by writing to us: SICPA INKS PAKISTAN (PVT) LTD.Jinnah Avenue,Malir Halt,75100,Karachi,Pakistan."
+            android:textSize="@dimen/_14sdp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

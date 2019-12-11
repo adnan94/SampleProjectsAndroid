@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <!--<import type="com.udna.tellotalk.utils.ApplicationUtils" />-->
+
+        <variable
+            name="url"
+            type="String" />
+
+        <variable
+            name="adapter"
+            type="com.tilismtech.demobindingadaptor.RecyclerAdaptor" />
+
+    </data>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:background="#d9d9d9"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:id="@+id/iv"
+        android:background="#fff"
+        />
+    <!--app:newsImage="@{url}"-->
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:id="@+id/iv1"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="80dp"
+    android:background="#fff"
+    android:layout_height="80dp"
+        android:id="@+id/iv2"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+</layout>

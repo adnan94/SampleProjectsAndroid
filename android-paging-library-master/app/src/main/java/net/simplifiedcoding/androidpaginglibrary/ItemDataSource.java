@@ -1,5 +1,6 @@
 package net.simplifiedcoding.androidpaginglibrary;
 
+import android.app.ProgressDialog;
 import android.arch.paging.PageKeyedDataSource;
 import android.support.annotation.NonNull;
 
@@ -15,9 +16,9 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
 
 
+
     @Override
     public void loadInitial(@NonNull LoadInitialParams<Integer> params, @NonNull final LoadInitialCallback<Integer, Item> callback) {
-
         RetrofitClient.getInsance()
                 .getApi()
                 .getAnswers(FIRST_PAGE, PAGE_SIZE, SITE_NAME)
@@ -28,14 +29,12 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
                         if(response.body() != null){
 
                             callback.onResult(response.body().items, null, FIRST_PAGE + 1);
-
                         }
 
                     }
 
                     @Override
                     public void onFailure(Call<StackApiResponse> call, Throwable t) {
-
                     }
                 });
 
@@ -43,7 +42,6 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
     @Override
     public void loadBefore(@NonNull final LoadParams<Integer> params, @NonNull final LoadCallback<Integer, Item> callback) {
-
         RetrofitClient.getInsance()
                 .getApi()
                 .getAnswers(params.key, PAGE_SIZE, SITE_NAME)
@@ -61,7 +59,6 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
                     @Override
                     public void onFailure(Call<StackApiResponse> call, Throwable t) {
-
                     }
                 });
 
@@ -69,7 +66,6 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
     @Override
     public void loadAfter(@NonNull final LoadParams<Integer> params, @NonNull final LoadCallback<Integer, Item> callback) {
-
         RetrofitClient.getInsance()
                 .getApi()
                 .getAnswers(params.key, PAGE_SIZE, SITE_NAME)
@@ -86,7 +82,6 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
                     @Override
                     public void onFailure(Call<StackApiResponse> call, Throwable t) {
-
                     }
                 });
 
