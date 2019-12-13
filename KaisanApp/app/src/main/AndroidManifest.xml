@@ -13,9 +13,14 @@
         android:roundIcon="@drawable/logo"
         android:name=".data.App"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.QRActivity"></activity>
-        <activity android:name=".ui.activities.QRSucessActivity" />
+        <activity android:name=".ui.activities.QRActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".ui.activities.QRSucessActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".ui.activities.SplashActivity"
             android:screenOrientation="portrait"

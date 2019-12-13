@@ -21,7 +21,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="@dimen/_130sdp"
-            android:src="@drawable/top_banner_info_screen"
+            android:id="@+id/iv"
             android:scaleType="fitXY"
             />
 <View
@@ -37,6 +37,8 @@
             android:layout_marginRight="@dimen/_10sdp"
             android:text="@string/info_about_kaisan"
             android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/calibri"
             android:layout_gravity="fill_horizontal"
             android:gravity="center_horizontal"
             android:textColor="@color/black"
@@ -56,6 +58,8 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:text="@string/about"
+            android:textStyle="bold"
+            android:fontFamily="@font/calibri"
             android:textSize="@dimen/_15sdp"
             android:textColor="@color/grey"
             />
@@ -66,6 +70,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_15sdp"
+         android:fontFamily="@font/calibri"
             android:text="@string/about_text"
             android:justificationMode="inter_word"
             android:textSize="@dimen/_14sdp"
@@ -76,6 +81,8 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/calibri"
+            android:textStyle="bold"
             android:text="@string/visusal"
             android:textSize="@dimen/_15sdp"
             android:textColor="@color/grey"
@@ -86,6 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/calibri"
             android:text="@string/visual_text"
             android:justificationMode="inter_word"
             android:textSize="@dimen/_14sdp"
@@ -96,7 +104,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="@dimen/_250sdp"
-            android:src="@drawable/pic_info"
+            android:id="@+id/iv2"
             android:layout_marginTop="@dimen/_20sdp"
             />
 
@@ -144,15 +152,15 @@
             <ImageView
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_15sdp"
-                android:src="@drawable/ultra_pic"
                 android:layout_centerVertical="true"
                 android:scaleType="fitXY"
+                android:id="@+id/ultra"
                 android:layout_marginLeft="@dimen/_20sdp"
                 />
             <ImageView
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
-                android:src="@drawable/tilism_icon_launch"
+                android:id="@+id/tilism_icon"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="@dimen/_20sdp"

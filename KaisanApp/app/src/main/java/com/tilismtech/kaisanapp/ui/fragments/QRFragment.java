@@ -58,9 +58,6 @@ public  String BASE_URL = "https://www.tilismtechservices.com/adminportal/";
     private void init(View view) {
             initQR(view);
 
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         getActivity().setTitle("Scan");
         progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Please wait...");
@@ -188,8 +185,8 @@ switch(status){
 
     @Override
     public void onDestroy() {
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
+
+        ((QRActivity)getActivity()).enableViews();
         super.onDestroy();
     }
 }

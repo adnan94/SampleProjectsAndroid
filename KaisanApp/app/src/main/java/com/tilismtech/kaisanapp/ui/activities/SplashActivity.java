@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.tilismtech.kaisanapp.R;
@@ -18,22 +19,21 @@ import pub.devrel.easypermissions.EasyPermissions;
 public class SplashActivity extends AppCompatActivity {
 
     private static final int REQUEST_SCAN_QR = 10000, REQUEST_CAMERA = 1000;
-LinearLayout layout;
+    ImageView layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-//        animate();
+        animate();
         scanQr();
     }
 
     private void animate() {
 
-        layout = (LinearLayout)findViewById(R.id.layout);
+        layout = (ImageView)findViewById(R.id.iv);
         Animation zoom = AnimationUtils.loadAnimation(this, R.anim.zoom_in);
-        layout.setAnimation(zoom);
-        zoom.start();
+        layout.startAnimation(zoom);
     }
 
 
@@ -61,7 +61,7 @@ LinearLayout layout;
             public void run() {
                 openQrScanActivity();
             }
-        },2000);
+        },3500);
     }
 
     @Override
