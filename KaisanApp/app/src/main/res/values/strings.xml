@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Rahnuma</string>
+    <string name="kaisan">KAISAN</string>
+    <string name="dost">DOST</string>
+    <string name="urdu">کیسان دوست</string>
+    <string name="camera_perm_for_qr">Need to access camera to scan QR code</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="looking">Searching for QR code</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="information">Information</string>
+    <string name="info_about_kaisan">Infomation Panel Kisan Rahnuma App</string>
+    <string name="about_text">Kisan Rahnuma App is a consumer engagement platform, a highly  secured digital verification system developed by Ultracoat Pakistan. This application is rigged with Tilism DMS, allowing users to authenticate the security labels digitally using a smartphone.</string>
+    <string name="about">About Application</string>
+    <string name="visusal">Visual Authentication of Security Label</string>
+    <string name="visual_text">The Security label contains multiple features that are verifiable through digital and visual authentication.  The security label shown below demonstrates visual  and digital features.</string>
+    <string name="result">Result Screen</string>
+</resources>
