@@ -1,4 +1,4 @@
-package com.revolutionary.room;
+package com.revolutionary.room.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -6,6 +6,10 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.revolutionary.room.Note;
+import com.revolutionary.room.NoteDao;
+import com.revolutionary.room.NoteRoomDatabase;
 
 import java.util.List;
 
@@ -28,7 +32,7 @@ public class NoteViewModel extends AndroidViewModel {
         new InsertAsyncTask(noteDao).execute(note);
     }
 
-    LiveData<List<Note>> getAllNotes() {
+    public LiveData<List<Note>> getAllNotes() {
         return mAllNotes;
     }
 

@@ -1,4 +1,4 @@
-package com.revolutionary.room;
+package com.revolutionary.room.ui;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
@@ -9,6 +9,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+
+import com.revolutionary.room.viewmodel.EditNoteViewModel;
+import com.revolutionary.room.Note;
+import com.revolutionary.room.R;
 
 public class EditNoteActivity extends AppCompatActivity {
 

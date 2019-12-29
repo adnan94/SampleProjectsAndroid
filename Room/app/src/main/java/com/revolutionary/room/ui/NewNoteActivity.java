@@ -1,4 +1,4 @@
-package com.revolutionary.room;
+package com.revolutionary.room.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.revolutionary.room.R;
 
 public class NewNoteActivity extends AppCompatActivity {
 

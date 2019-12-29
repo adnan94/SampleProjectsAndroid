@@ -1,4 +1,4 @@
-package com.revolutionary.room;
+package com.revolutionary.room.adaptor;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,8 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
+
+import com.revolutionary.room.ui.EditNoteActivity;
+import com.revolutionary.room.ui.MainActivity;
+import com.revolutionary.room.Note;
+import com.revolutionary.room.R;
 
 import java.util.List;
 
@@ -44,7 +48,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
 
         if (mNotes != null) {
             Note note = mNotes.get(position);
-            holder.setData(note.getNote(), position);
+            holder.setData(note, position);
             holder.setListeners();
         } else {
             // Covers the case of data not being ready yet.
@@ -77,8 +81,8 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
             imgEdit 	 = itemView.findViewById(R.id.ivRowEdit);
         }
 
-        public void setData(String note, int position) {
-            noteItemView.setText(note);
+        public void setData(Note note, int position) {
+            noteItemView.setText(note.getNote()+" - "+note.getCity());
             mPosition = position;
         }
 

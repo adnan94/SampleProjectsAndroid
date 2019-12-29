@@ -1,10 +1,14 @@
-package com.revolutionary.room;
+package com.revolutionary.room.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 import android.util.Log;
+
+import com.revolutionary.room.Note;
+import com.revolutionary.room.NoteDao;
+import com.revolutionary.room.NoteRoomDatabase;
 
 public class EditNoteViewModel extends AndroidViewModel {
 

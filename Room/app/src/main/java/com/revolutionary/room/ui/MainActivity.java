@@ -1,4 +1,4 @@
-package com.revolutionary.room;
+package com.revolutionary.room.ui;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -11,9 +11,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.revolutionary.room.Note;
+import com.revolutionary.room.viewmodel.NoteViewModel;
+import com.revolutionary.room.R;
+import com.revolutionary.room.adaptor.NoteListAdapter;
 
 import java.util.List;
 import java.util.UUID;
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements NoteListAdapter.O
 
             // Code to insert note
             final String note_id = UUID.randomUUID().toString();
-            Note note = new Note(note_id, data.getStringExtra(NewNoteActivity.NOTE_ADDED));
+            Note note = new Note(note_id, data.getStringExtra(NewNoteActivity.NOTE_ADDED),"Karachi","Pakistan");
             noteViewModel.insert(note);
 
             Toast.makeText(
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements NoteListAdapter.O
             // Code to update the note
             Note note = new Note(
                     data.getStringExtra(EditNoteActivity.NOTE_ID),
-                    data.getStringExtra(EditNoteActivity.UPDATED_NOTE));
+                    data.getStringExtra(EditNoteActivity.UPDATED_NOTE),"Karachi","Pakistan");
             noteViewModel.update(note);
 
             Toast.makeText(
