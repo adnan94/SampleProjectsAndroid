@@ -21,7 +21,8 @@ public abstract class NoteRoomDatabase extends RoomDatabase {
                 if (noteRoomInstance == null) {
                     noteRoomInstance = Room.databaseBuilder(context.getApplicationContext(),
                             NoteRoomDatabase.class, "note_database")
-                            .allowMainThreadQueries()
+//                            .allowMainThreadQueries()
+//                            .fallbackToDestructiveMigration()
                             .addMigrations(MIGRATION_1_2,MIGRATION_2_3)
                             .build();
                 }

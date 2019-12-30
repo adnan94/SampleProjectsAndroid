@@ -82,7 +82,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
         }
 
         public void setData(Note note, int position) {
-            noteItemView.setText(note.getNote()+" - "+note.getCity());
+            noteItemView.setText(note.getNote()+" - "+note.getCity()+" - "+note.getCountry());
             mPosition = position;
         }
 

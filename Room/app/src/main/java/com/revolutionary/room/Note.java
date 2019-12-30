@@ -42,7 +42,7 @@ public class Note {
     @ColumnInfo(name = "city")
     private String city;
 
-    @NonNull
+
     @ColumnInfo(name = "country")
     private String country;
 
