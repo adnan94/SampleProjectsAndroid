@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_16sdp</dimen>
+    <dimen name="nav_header_vertical_spacing">@dimen/_8sdp</dimen>
+    <dimen name="nav_header_height">@dimen/_176sdp</dimen>
+    <dimen name="fab_margin">@dimen/_16sdp</dimen>
+    <dimen name="home_screen_padding">@dimen/_15sdp</dimen>
+    <dimen name="check_service_width">@dimen/_50sdp</dimen>
+    <dimen name="padding_add_car">@dimen/_10sdp</dimen>
+    <dimen name="pic_box_height_add_car">@dimen/_100sdp</dimen>
+    <dimen name="padding_date_appoinment">@dimen/_80sdp</dimen>
+    <dimen name="padding_items_summary">@dimen/_10sdp</dimen>
+    <dimen name="margin_bottom_panel_find_mechanic">@dimen/_100sdp</dimen>
+    <dimen name="margin_top_find">@dimen/_10sdp</dimen>
+    <dimen name="repairs_text_headings">@dimen/_14ssp</dimen>
+    <dimen name="img_width_height">@dimen/_170sdp</dimen>
+    <dimen name="slide_title">@dimen/_30sdp</dimen>
+    <dimen name="slide_desc">@dimen/_16sdp</dimen>
+    <dimen name="dots_height">@dimen/_30sdp</dimen>
+    <dimen name="dots_margin_bottom">@dimen/_20sdp</dimen>
+
+
+    <dimen name="fourteenSp">@dimen/_14ssp</dimen>
+    <dimen name="twentySp">@dimen/_20ssp</dimen>
+    <dimen name="fiveSp">@dimen/_5ssp</dimen>
+    <dimen name="tenSp">@dimen/_10ssp</dimen>
+    <dimen name="SixteenSp">@dimen/_16ssp</dimen>
+    <dimen name="twentyFiveSp">@dimen/_25ssp</dimen>
+    <dimen name="fourtySp">@dimen/_40ssp</dimen>
+    <dimen name="twelveSp">@dimen/_12ssp</dimen>
+    <dimen name="fifteenSp">@dimen/_15ssp</dimen>
+
+    <dimen name="hundred">@dimen/_100sdp</dimen>
+    <dimen name="one_twenty">@dimen/_120sdp</dimen>
+
+    <dimen name="fourteen">@dimen/_14sdp</dimen>
+    <dimen name="twenty">@dimen/_20sdp</dimen>
+    <dimen name="five">@dimen/_5sdp</dimen>
+    <dimen name="ten">@dimen/_10sdp</dimen>
+    <dimen name="sixteen">@dimen/_16sdp</dimen>
+    <dimen name="twentyFive">@dimen/_25sdp</dimen>
+    <dimen name="seventy_five">@dimen/_75sdp</dimen>
+    <dimen name="fourty">@dimen/_40sdp</dimen>
+    <dimen name="fourty_five">@dimen/_45sdp</dimen>
+
+    <dimen name="twelve">@dimen/_12sdp</dimen>
+    <dimen name="fifteen">@dimen/_15sdp</dimen>
+    <dimen name="sixty">@dimen/_60sdp</dimen>
+    <dimen name="eighty">@dimen/_80sdp</dimen>
+    <dimen name="picture_todays_menu">@dimen/_130sdp</dimen>
+    <dimen name="one_fourty">@dimen/_140sdp</dimen>
+
+
+</resources>
