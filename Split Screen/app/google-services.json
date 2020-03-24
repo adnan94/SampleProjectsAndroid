@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "327658812008",
+    "firebase_url": "https://orchard-oranges-9cfe4.firebaseio.com",
+    "project_id": "orchard-oranges-9cfe4",
+    "storage_bucket": "orchard-oranges-9cfe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327658812008:android:dd09a1746daae4f48c01dd",
+        "android_client_info": {
+          "package_name": "com.revolutionary.orchardoranges"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327658812008-g1lguomet7lpbcopsdf26kbue77mmj5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_6gS1aN5pM8vgyqJSQgQTu5g5VN6rFks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327658812008-g1lguomet7lpbcopsdf26kbue77mmj5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

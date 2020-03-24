@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#269A40</color>
+    <color name="colorPrimaryDark">#269A40</color>
+    <color name="colorAccent">#269A40</color>
+
+    <color name="colorYello">#DA9317</color>
+    <color name="colorRed">#AA0617</color>
+    <color name="colorOrange">#DB621A</color>
+
+
+
+    <color name="price_grreen">#179c29</color>
+    <color name="red">#E65D33</color>
+    <color name="red_toolbar">#E65D33</color>
+    <color name="splash">#E6E6E2</color>
+
+    <color name="blueTop">#39AEAD</color>
+    <color name="blueBottom">#3444DC</color>
+
+
+    <color name="bookTable">#466D86</color>
+    <color name="bookTableBottom">#482668</color>
+
+
+    <color name="cart">#EA5C38</color>
+
+
+
+    <color name="grey">#b9b8b8</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="line">#d9d9d9</color>
+    <color name="trans">#00000000</color>
+    <color name="bar">#6244c9</color>
+    <color name="bar_blue">#1c80af</color>
+    <color name="bar_green">#17ab2c</color>
+
+
+
+    <color name="bar_grey">#d8d8d8</color>
+    <color name="light_green">#aaf7c1</color>
+    <color name="light_red">#ffb0b1</color>
+    <color name="google">#910000</color>
+    <color name="colorButtonOff">#656668</color>
+    <color name="tapped_bar">#AF383E</color>
+
+    <color name="activated">#59466D86</color>
+
+    <array name="array_dot_inactive">
+        <item>#aabfd0</item>
+        <item>#aabfd0</item>
+        <item>#aabfd0</item>
+
+    </array>
+    <array name="array_dot_active">
+        <item>#269A40</item>
+        <item>#269A40</item>
+        <item>#269A40</item>
+
+    </array>
+
+
+
+
+
+
+
+
+
+</resources>

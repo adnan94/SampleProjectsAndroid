@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_one"
+        android:icon="@mipmap/home_on"
+        android:title="Home"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item_two"
+        android:icon="@mipmap/orders_on"
+        app:showAsAction="always"
+        android:title="Orders" />
+    <item
+        android:id="@+id/item_three"
+        android:icon="@mipmap/info_on"
+        app:showAsAction="always"
+        android:title="Info" />
+    <item
+        android:id="@+id/item_five"
+        android:icon="@mipmap/profile_on"
+        app:showAsAction="always"
+        android:title="Profile" />
+
+</menu>

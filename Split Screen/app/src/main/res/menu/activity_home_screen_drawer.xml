@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/mmy_repairs"
+            android:icon="@mipmap/my_mangoes"
+            android:title="My Mangoes" />
+        <item
+            android:id="@+id/track_orders"
+            android:icon="@mipmap/track_order"
+            android:title="Track Orders"
+            android:visible="false" />
+        <item
+            android:id="@+id/add_orders"
+            android:icon="@mipmap/my_mango"
+            android:title="Add Orders"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/add_product"
+            android:icon="@mipmap/my_mango"
+            android:title="Add Product"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/view_product"
+            android:icon="@mipmap/my_mango"
+            android:title="View Product"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/add_pricing"
+            android:icon="@mipmap/my_mango"
+            android:title="Add Pricing"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/order_assign"
+            android:icon="@mipmap/my_mango"
+            android:title="Order Assignment"
+            android:visible="false" />
+        <item
+            android:id="@+id/add_driver"
+            android:icon="@mipmap/my_mango"
+            android:title="Add Driver"
+            android:visible="false" />
+        <item
+            android:id="@+id/view_driver"
+            android:icon="@mipmap/my_mango"
+            android:title="View Driver"
+            android:visible="false" />
+        <item
+            android:id="@+id/add_customer"
+            android:icon="@mipmap/my_mango"
+            android:title="Add Customer"
+            android:visible="false" />
+        <item
+            android:id="@+id/view_customer"
+            android:icon="@mipmap/track_order_icon"
+            android:title="View Customer"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/addCuppon"
+            android:icon="@mipmap/contact"
+            android:title="Add Coupon"
+            android:visible="false" />
+        <item
+            android:id="@+id/add_slider"
+            android:icon="@mipmap/my_mango"
+            android:title="Update Slider"
+            android:visible="false" />
+ <item
+            android:id="@+id/edit_slider"
+            android:icon="@mipmap/my_mango"
+            android:title="Edit Slider"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/pushNotification"
+            android:icon="@mipmap/notification_icon"
+            android:title="Push Notification"
+            android:visible="false" />
+        <item
+            android:id="@+id/faq"
+            android:icon="@mipmap/faq"
+            android:title="FAQs"
+            android:visible="false" />
+        <item
+            android:id="@+id/recipes"
+            android:icon="@mipmap/recipes"
+            android:title="Recipes"
+            android:visible="false" />
+        <item
+            android:id="@+id/blogs"
+            android:icon="@mipmap/blog"
+            android:title="Blogs"
+            android:visible="false" />
+        <item
+            android:id="@+id/mangoJourney"
+            android:icon="@mipmap/mango_journey"
+            android:title="Mango Journey"
+            android:visible="false" />
+        <item
+            android:id="@+id/addGallery"
+            android:icon="@mipmap/contact"
+            android:title="Gallery Images"
+            android:visible="false" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@mipmap/notifications"
+            android:title="Notifications"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/feeds"
+            android:icon="@mipmap/about"
+            android:title="FeedBack"
+            android:visible="false" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/about_icon"
+            android:title="About Us" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@mipmap/contact_icon"
+            android:title="Contact Us" />
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/logout_icon"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

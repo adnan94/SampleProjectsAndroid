@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E7630D</color>
+    <color name="colorPrimaryDark">#E7630D</color>
+    <color name="colorAccent">#E7630D</color>
+
+    <color name="buttonLight">#dde923</color>
+    <color name="buttonDark">#E7630D</color>
+
+    <color name="my_spinner_text_color">#fff</color>
+    <color name="price_green">#257e23</color>
+    <color name="bg">#f2f2f2</color>
+    <color name="white">#fff</color>
+    <color name="linen">#d9d9d9</color>
+    <color name="black">#000</color>
+    <color name="nav_splash">#E0660C</color>
+    <color name="orders">#DA2D1E</color>
+    <color name="colorRed">#963A3E</color>
+
+
+</resources>
