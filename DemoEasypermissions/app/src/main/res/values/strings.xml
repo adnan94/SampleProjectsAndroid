@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DemoEasypermissions</string>
+    <string name="camera_perm_for_qr">Need to access camera to scan QR code</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>
