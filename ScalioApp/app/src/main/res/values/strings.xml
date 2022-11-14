@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ScalioApp</string>
+    <string name="type_here_to_search">Type here to search</string>
+    <string name="enter_user_to_search">Enter username to search</string>
+    <string name="enter_text_to_search">Enter text to search</string>
+    <string name="internet_not_available">Internet not available</string>
+</resources>

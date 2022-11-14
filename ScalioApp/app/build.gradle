@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 32
+
+    //using url properties file
+    def urlsFile = rootProject.file("urls.properties")
+    def urlProperties = new Properties()
+    urlProperties.load(new FileInputStream(urlsFile))
+
+    defaultConfig {
+        applicationId "com.example.scalioapp"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "BASE_URL", urlProperties['BASE_URL']
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        test {
+            resources.srcDirs += ['src/test/resources']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$core_ktx"
+    implementation "androidx.appcompat:appcompat:$app_compat"
+    implementation "com.google.android.material:material:$material"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle"
+    implementation "androidx.constraintlayout:constraintlayout:$constrint_layout"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.facebook.fresco:fresco:$fresco"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_gson_converter"
+    implementation "androidx.paging:paging-runtime-ktx:$paging"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+    testImplementation "junit:junit:$junit"
+    testImplementation 'org.json:json:20210307'
+    testImplementation "androidx.arch.core:core-testing:$core_testing"
+    testImplementation "io.mockk:mockk:$mock"
+    androidTestImplementation "io.mockk:mockk-android:$mock"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt("com.google.dagger:hilt-android-compiler:$hilt_version")
+    implementation "androidx.activity:activity-ktx:$activity_version"
+}
+kapt {
+    correctErrorTypes = true
+}
