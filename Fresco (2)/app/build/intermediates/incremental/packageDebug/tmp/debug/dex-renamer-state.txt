@@ -1,0 +1,4 @@
+#Sat Nov 23 14:00:25 PKT 2019
+base.0=/Users/mac/Desktop/Projects Bitbucket/Android/Fresco/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

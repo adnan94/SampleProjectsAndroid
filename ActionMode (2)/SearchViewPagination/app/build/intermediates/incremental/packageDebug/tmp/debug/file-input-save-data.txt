@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Jan 05 20:56:32 PKT 2020
+0.baseType=DIRECTORY
+0.base=/Users/mac/Desktop/Projects Bitbucket/Android/SampleProjectsAndroid/ActionMode/SearchViewPagination/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1
