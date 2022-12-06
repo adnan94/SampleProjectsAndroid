@@ -1,8 +1,13 @@
 package com.example.scalioapp.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "users")
 data class User(
-    var login: String,
+    @PrimaryKey
     var id: Int,
+    var login: String,
     var node_id: String,
     var avatar_url: String,
     var gravatar_id: String,

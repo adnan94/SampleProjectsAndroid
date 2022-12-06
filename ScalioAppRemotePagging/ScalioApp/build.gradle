@@ -33,4 +33,5 @@ ext {
     mock = "1.10.6"
     hilt_version= "2.38.1"
     activity_version= "1.2.3"
+    room= "2.3.0-beta01"
 }

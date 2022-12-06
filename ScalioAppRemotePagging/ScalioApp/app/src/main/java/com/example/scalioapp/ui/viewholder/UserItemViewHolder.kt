@@ -8,7 +8,7 @@ class UserItemViewHolder (private val listItemClassifiedBinding: ListItemUserBin
     RecyclerView.ViewHolder(listItemClassifiedBinding.root) {
 
     fun bind(user: User) {
-        listItemClassifiedBinding.login.text = user.login
+        listItemClassifiedBinding.login.text = "$adapterPosition ${user.login}"
         listItemClassifiedBinding.type.text = user.type
         listItemClassifiedBinding.image.setImageURI(user.avatar_url)
 
