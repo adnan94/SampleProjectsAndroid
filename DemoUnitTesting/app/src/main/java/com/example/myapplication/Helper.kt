@@ -15,4 +15,19 @@ class Helper {
 
     }
 
+    fun doLogin(password:String?):String{
+        if(password == null){
+            return "Password must not null"
+        }else if(password.length==6){
+            return "Success"
+        }else if(password.length < 6){
+          return "Password must be 6 characters"
+        }else if(password.length > 6){
+            return "Password should be less 6 letters"
+        }else if(password.isBlank()){
+            return "Enter password empty not allowed"
+        }
+        return ""
+    }
+
 }

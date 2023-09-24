@@ -1,14 +1,11 @@
 package com.example.myapplication
 
-import android.R
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import pub.devrel.easypermissions.EasyPermissions
-import pub.devrel.easypermissions.PermissionRequest
 
 
 //import pub.devrel.easypermissions.EasyPermissions
@@ -41,13 +38,18 @@ class MainActivity : AppCompatActivity(), EasyPermissions.RationaleCallbacks,Eas
 //            )
 
 //            Request 2
-            EasyPermissions.requestPermissions(
-                PermissionRequest.Builder(this, 0, *perms)
-                    .setRationale("Location Request for konnect app")
-                    .setPositiveButtonText("ok")
-                    .setNegativeButtonText("Cancel")
-                    .build()
+//            EasyPermissions.requestPermissions(
+//                PermissionRequest.Builder(this, 0, *perms)
+//                    .setRationale("Location Request for konnect app")
+//                    .setPositiveButtonText("ok")
+//                    .setNegativeButtonText("Cancel")
+//                    .build()
+//            )
+            ActivityCompat.requestPermissions(
+                this,perms,
+                101
             )
+
         }
     }
 
